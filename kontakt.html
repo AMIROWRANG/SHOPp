@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - RedByte Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <div class="logo-text">
+          <strong>RedByte Shop</strong>
+          <small>Kontaktformular</small>
+        </div>
+      </div>
+
+      <section class="menu-group">
+        <h2>NAVIGATION</h2>
+        <nav>
+          <a class="menu-item" href="index.html">Startseite</a>
+          <a class="menu-item" href="mouse.html">Gaming-Mäuse</a>
+          <a class="menu-item" href="agb.html">AGB</a>
+          <a class="menu-item" href="impressum.html">Impressum</a>
+          <a class="menu-item active" href="kontakt.html">Kontakt</a>
+        </nav>
+      </section>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div class="search-box">Kontaktformular</div>
+        <div class="top-actions">
+          <span><a href="index.html">Startseite</a></span>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="panel contact-panel">
+          <h2>Kontaktformular</h2>
+          <p>Schreib uns eine Nachricht. Wir melden uns so schnell wie möglich bei dir.</p>
+
+          <form class="login-form contact-form" action="mailto:amirowrang81@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" required>
+
+            <label for="email">E-Mail</label>
+            <input id="email" name="E-Mail" type="email" required>
+
+            <label for="betreff">Betreff</label>
+            <input id="betreff" name="Betreff" type="text" required>
+
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="Nachricht" rows="6" required></textarea>
+
+            <label class="check-line" for="datenschutz">
+              <input id="datenschutz" name="Datenschutz" type="checkbox" required>
+              <span>Ich stimme der Verarbeitung meiner Daten für die Kontaktaufnahme zu.</span>
+            </label>
+
+            <button type="submit">Nachricht senden</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 RedByte Shop. Schulprojekt mit HTML und CSS.</p>
+        <p class="footer-links">
+          <a href="agb.html">AGB</a> |
+          <a href="impressum.html">Impressum</a> |
+          <a href="kontakt.html">Kontakt</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+

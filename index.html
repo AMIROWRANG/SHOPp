@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedByte Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-all" checked>
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-logitech">
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-razer">
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-corsair">
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-steelseries">
+    <input class="filter-radio" type="radio" name="brand-filter" id="brand-keychron">
+    <input class="filter-radio" type="radio" name="price-filter" id="price-all" checked>
+    <input class="filter-radio" type="radio" name="price-filter" id="price-low">
+    <input class="filter-radio" type="radio" name="price-filter" id="price-mid">
+    <input class="filter-radio" type="radio" name="price-filter" id="price-high">
+    <input class="filter-radio" type="radio" name="price-filter" id="price-premium">
+
+    <aside class="sidebar premium-sidebar">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <div class="logo-text">
+          <strong>RedByte Shop</strong>
+          <small>Tastatur & Maus</small>
+        </div>
+      </div>
+
+      <section class="menu-group">
+        <h2>NAVIGATION</h2>
+        <nav>
+          <a class="menu-item active" href="#start"><span class="menu-ico">⌂</span>Startseite</a>
+          <a class="menu-item" href="#maeuse"><span class="menu-ico">◉</span>Maus</a>
+          <a class="menu-item" href="#produkte"><span class="menu-ico">⌨</span>Tastatur</a>
+          <a class="menu-item" href="#angebote"><span class="menu-ico">%</span>Aktuelle Angebote</a>
+        </nav>
+      </section>
+
+      <section class="menu-group">
+        <h2>KATEGORIE</h2>
+        <div class="chip-list">
+          <a class="chip chip-active" href="#produkte">Alle</a>
+          <a class="chip" href="#kabellos">Kabellos</a>
+          <a class="chip chip-wide" href="#kabelgebunden">Kabelgebunden</a>
+        </div>
+      </section>
+
+      <section class="menu-group">
+        <h2>MARKEN</h2>
+        <div class="brand-chips">
+          <label class="brand-chip" for="brand-all">Alle</label>
+          <label class="brand-chip" for="brand-logitech">Logitech</label>
+          <label class="brand-chip" for="brand-razer">Razer</label>
+          <label class="brand-chip" for="brand-corsair">Corsair</label>
+          <label class="brand-chip" for="brand-steelseries">SteelSeries</label>
+          <label class="brand-chip" for="brand-keychron">Keychron</label>
+        </div>
+      </section>
+
+      <section class="menu-group">
+        <h2>PREISBEREICH</h2>
+        <div class="price-box">
+          <div class="brand-chips">
+            <label class="brand-chip" for="price-all">Alle</label>
+            <label class="brand-chip" for="price-low">20-80</label>
+            <label class="brand-chip" for="price-mid">81-120</label>
+            <label class="brand-chip" for="price-high">121-180</label>
+            <label class="brand-chip" for="price-premium">181-300</label>
+          </div>
+          <p class="price-selected">
+            <span class="range-label range-all">Ausgewählt: 20 - 300 EUR</span>
+            <span class="range-label range-low">Ausgewählt: 20 - 80 EUR</span>
+            <span class="range-label range-mid">Ausgewählt: 81 - 120 EUR</span>
+            <span class="range-label range-high">Ausgewählt: 121 - 180 EUR</span>
+            <span class="range-label range-premium">Ausgewählt: 181 - 300 EUR</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="menu-group">
+        <h2>KONTO</h2>
+        <nav>
+          <a class="menu-item" href="login.html"><span class="menu-ico">◍</span>Login</a>
+          <a class="menu-item" href="cart.html"><span class="menu-ico">▣</span>Bestellungen</a>
+          <a class="menu-item" href="wishlist.html"><span class="menu-ico">♡</span>Wunschliste</a>
+          <a class="menu-item" href="settings.html"><span class="menu-ico">⚙</span>Einstellungen</a>
+        </nav>
+      </section>
+
+      <div class="sidebar-foot">
+        <p>© 2026 RedByte</p>
+        <div class="side-social">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="X">✕</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div class="search-box">Suche nach Maus, Tastatur und mehr...</div>
+        <div class="top-actions">
+          <span><a href="cart.html">CART <span class="cart-count">0</span></a></span>
+          <span><a href="login.html">USER</a></span>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="panel hero-panel" id="start">
+          <h1>Willkommen bei RedByte Shop</h1>
+          <p>
+            Dein moderner Shop für starke Setups. Finde jetzt Tastaturen, Mäuse
+            und passendes Zubehör für Schule, Büro und Gaming.
+          </p>
+          <a class="button" href="#produkte">Jetzt Produkte ansehen</a>
+        </section>
+
+        <section class="panel" id="produkte">
+          <h2>Tastaturen</h2>
+          <div class="product-group" id="kabellos">
+            <h3 class="group-title">Kabellos</h3>
+            <div class="product-grid">
+              <article class="card clickable-card" data-brand="keychron" data-price="99.99" data-price-range="mid">
+                <a class="card-overlay-link" href="products/keychron-k2-v2.html" aria-label="Keychron K2 V2"></a>
+                <img class="product-image" src="assets/products/keychron-k2-v2.jpg" alt="Keychron K2 V2 Tastatur">
+                <h3>Keychron K2 V2</h3>
+                <p>Vielseitige Wireless-Tastatur, ideal für Schule, Arbeit und Zuhause.</p>
+                <span class="price">99,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="logitech" data-price="189.99" data-price-range="premium">
+                <a class="card-overlay-link" href="products/logitech-g915.html" aria-label="Logitech G915"></a>
+                <img class="product-image" src="assets/products/logitech-g915.jpg" alt="Logitech G915 Tastatur">
+                <h3>Logitech G915</h3>
+                <p>Bekannte Premium Tastatur mit elegantem Design und starker Leistung.</p>
+                <span class="price">189,99 EUR</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="product-group" id="kabelgebunden">
+            <h3 class="group-title">Kabelgebunden</h3>
+            <div class="product-grid">
+              <article class="card clickable-card" data-brand="logitech" data-price="149.99" data-price-range="high">
+                <a class="card-overlay-link" href="products/logitech-g-pro-x-keyboard.html" aria-label="Logitech G Pro X Tastatur"></a>
+                <img class="product-image" src="assets/products/logitech-g-pro-x-keyboard.jpg" alt="Logitech G Pro X Tastatur">
+                <h3>Logitech G Pro X Tastatur</h3>
+                <p>Kompakte mechanische Gaming-Tastatur mit hochwertiger Verarbeitung.</p>
+                <span class="price">149,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="razer" data-price="179.99" data-price-range="high">
+                <a class="card-overlay-link" href="products/razer-blackwidow-v4.html" aria-label="Razer BlackWidow V4"></a>
+                <img class="product-image" src="assets/products/razer-blackwidow-v4.jpg" alt="Razer BlackWidow V4 Tastatur">
+                <h3>Razer BlackWidow V4</h3>
+                <p>Beliebte Gaming-Tastatur für Gamer mit starkem Feedback beim Tippen.</p>
+                <span class="price">179,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="corsair" data-price="69.99" data-price-range="low">
+                <a class="card-overlay-link" href="products/corsair-k55.html" aria-label="Corsair K55"></a>
+                <img class="product-image" src="assets/products/corsair-k55.jpg" alt="Corsair K55 Mechanical Tastatur">
+                <h3>Corsair K55</h3>
+                <p>Beliebte Tastatur mit gutem Preis-Leistungs-Verhältnis.</p>
+                <span class="price">69,99 EUR</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="angebote">
+          <h2>Aktuelle Angebote</h2>
+          <div class="product-grid">
+            <article class="card clickable-card" data-brand="logitech" data-price="149.99" data-price-range="high">
+              <a class="card-overlay-link" href="products/logitech-g-pro-x-keyboard.html" aria-label="Logitech G Pro X Keyboard"></a>
+              <span class="offer-badge">-16%</span>
+              <img class="product-image" src="assets/products/logitech-g-pro-x-keyboard.jpg" alt="Logitech G Pro X Keyboard">
+              <h3>Logitech G Pro X Keyboard</h3>
+              <p>Jetzt im Angebot - nur für kurze Zeit.</p>
+              <p><span class="old-price-inline">179,99 EUR</span> <span class="new-price-inline">149,99 EUR</span></p>
+            </article>
+
+            <article class="card clickable-card" data-brand="razer" data-price="79.99" data-price-range="low">
+              <a class="card-overlay-link" href="products/razer-deathadder-v3.html" aria-label="Razer DeathAdder V3"></a>
+              <span class="offer-badge">-20%</span>
+              <img class="product-image" src="assets/products/razer-deathadder-v3.jpg" alt="Razer DeathAdder V3 Maus">
+              <h3>Razer DeathAdder V3</h3>
+              <p>Starke Leistung zum reduzierten Preis.</p>
+              <p><span class="old-price-inline">99,99 EUR</span> <span class="new-price-inline">79,99 EUR</span></p>
+            </article>
+
+            <article class="card clickable-card" data-brand="logitech" data-price="89.99" data-price-range="mid">
+              <a class="card-overlay-link" href="products/logitech-g502-x-wired.html" aria-label="Logitech G502 X Wired"></a>
+              <span class="offer-badge">-30%</span>
+              <img class="product-image" src="assets/products/logitech-g502-x-wired.jpg" alt="Logitech G502 X Wired Maus">
+              <h3>Logitech G502 X Wired</h3>
+              <p>Premium-Maus mit attraktivem Rabatt.</p>
+              <p><span class="old-price-inline">129,99 EUR</span> <span class="new-price-inline">89,99 EUR</span></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="maeuse">
+          <h2>Alle Mäuse</h2>
+          <div class="product-group" id="maus-kabellos">
+            <h3 class="group-title">Kabellos</h3>
+            <div class="product-grid">
+              <article class="card clickable-card" data-brand="logitech" data-price="99.99" data-price-range="mid">
+                <a class="card-overlay-link" href="products/logitech-mx-master-3s.html" aria-label="Logitech MX Master 3S"></a>
+                <img class="product-image" src="assets/products/logitech-mx-master-3s.jpg" alt="Logitech MX Master 3S Maus">
+                <h3>Logitech MX Master 3S</h3>
+                <p>Sehr bekannte Profi-Maus für Produktivität und Alltag.</p>
+                <span class="price">99,99 EUR</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="product-group" id="maus-kabelgebunden">
+            <h3 class="group-title">Kabelgebunden</h3>
+            <div class="product-grid">
+              <article class="card clickable-card" data-brand="logitech" data-price="89.99" data-price-range="mid">
+                <a class="card-overlay-link" href="products/logitech-g502-x-wired.html" aria-label="Logitech G502 X Wired"></a>
+                <img class="product-image" src="assets/products/logitech-g502-x-wired.jpg" alt="Logitech G502 X Wired Maus">
+                <h3>Logitech G502 X Wired</h3>
+                <p>Ergonomische Premium Maus mit hoher Präzision und starkem Sensor.</p>
+                <span class="price">89,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="razer" data-price="79.99" data-price-range="low">
+                <a class="card-overlay-link" href="products/razer-deathadder-v3.html" aria-label="Razer DeathAdder V3"></a>
+                <img class="product-image" src="assets/products/razer-deathadder-v3.jpg" alt="Razer DeathAdder V3 Maus">
+                <h3>Razer DeathAdder V3</h3>
+                <p>Schnelle und leichte kabelgebundene Gaming Maus.</p>
+                <span class="price">79,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="steelseries" data-price="39.99" data-price-range="low">
+                <a class="card-overlay-link" href="products/steelseries-rival-3.html" aria-label="SteelSeries Rival 3"></a>
+                <img class="product-image" src="assets/products/steelseries-rival-3.jpg" alt="SteelSeries Rival 3 Maus">
+                <h3>SteelSeries Rival 3</h3>
+                <p>Preiswerte und zuverlässige kabelgebundene Maus.</p>
+                <span class="price">39,99 EUR</span>
+              </article>
+              <article class="card clickable-card" data-brand="razer" data-price="59.99" data-price-range="low">
+                <a class="card-overlay-link" href="products/razer-deathadder-essential.html" aria-label="Razer DeathAdder"></a>
+                <img class="product-image" src="assets/products/razer-deathadder.jpg" alt="Razer DeathAdder Maus">
+                <h3>Razer DeathAdder</h3>
+                <p>Klassische kabelgebundene Gaming Maus, schnell und ergonomisch.</p>
+                <span class="price">59,99 EUR</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="vorteile">
+          <h2>Warum bei uns kaufen?</h2>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h3>Gute Qualität</h3>
+              <p>Langlebige Produkte mit hoher Leistung.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Schnelle Lieferung</h3>
+              <p>Schnell und sicher zu dir nach Hause.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Faire Preise</h3>
+              <p>Starke Produkte zum fairen Preis.</p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 RedByte Shop. Schulprojekt mit HTML und CSS.</p>
+        <p class="footer-links">
+          <a href="agb.html">AGB</a> |
+          <a href="impressum.html">Impressum</a> |
+          <a href="kontakt.html">Kontakt</a>
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
